@@ -1,0 +1,12 @@
+const searchHorizontal = (position: number, nums: number[]): void => {
+  if(nums[position] <= target) {
+      result.push(position);
+      searchHorizontal(position - 1, numsSet)
+  } else {
+      if (((position + 1) <= nums.length) && (nums[position] <= target))
+          searchHorizontal(position + 1, numsSet)
+  }
+  
+}
+
+searchHorizontal(Math.ceil((numsSet.length-1)), numsSet);
